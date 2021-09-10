@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginexample/Screens/Home/home_screen.dart';
 import 'package:loginexample/Screens/Login/login_screen.dart';
 import 'package:loginexample/Screens/Signup/signup_screen.dart';
 import 'package:loginexample/Screens/Welcome/components/background.dart';
@@ -53,6 +54,20 @@ class Body extends StatelessWidget {
                 );
               },
             ),
+            RoundedButton(
+                text: "Home",
+                color: kPrimaryColor,
+                textColor: Colors.white,
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return HomeScreen();
+                      },
+                    ),
+                  );
+                })
           ],
         ),
       ),

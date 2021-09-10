@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginexample/Screens/Home/home_screen.dart';
 import 'package:loginexample/Screens/Welcome/welcome_screen.dart';
 import 'package:loginexample/constants.dart';
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: WelcomeScreen(),
+      //WelcomeScreen
+      home: HomeScreen(),
     );
   }
 }
